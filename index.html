@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collective Sound Entertainment</title>
+  <meta name="description" content="Collective Sound Entertainment - live music and band booking. Nashville and Franklin, TN." />
+  <style>
+    :root {
+      --bg-top: #0b0d12;
+      --bg-bottom: #161a24;
+      --card: #1e2431;
+      --accent: #c9a24b;
+      --accent-hover: #ddb968;
+      --text: #f4f5f7;
+      --muted: #9aa3b2;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+      color: var(--text);
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 32px 20px 48px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+    }
+    .brand {
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-top: 8px;
+    }
+    .brand .amp { color: var(--accent); }
+    .tagline {
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 10px;
+      letter-spacing: 0.3px;
+    }
+    .qr-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 18px;
+      display: inline-block;
+      margin: 30px auto 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    .qr-card img {
+      display: block;
+      width: 250px;
+      height: 250px;
+    }
+    .scan {
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    .links { display: flex; flex-direction: column; gap: 16px; }
+    a.btn {
+      display: block;
+      background: var(--card);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 20px 22px;
+      border-radius: 14px;
+      border: 1px solid rgba(201,162,75,0.25);
+      transition: background 0.15s ease, transform 0.05s ease, border-color 0.15s ease;
+    }
+    a.btn:hover { background: #262d3d; border-color: var(--accent); }
+    a.btn:active { transform: scale(0.98); }
+    a.btn.primary {
+      background: var(--accent);
+      color: #14161d;
+      border-color: var(--accent);
+    }
+    a.btn.primary:hover { background: var(--accent-hover); }
+    .foot {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 34px;
+      letter-spacing: 0.3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="brand">Collective <span class="amp">+</span> Sound<br />Entertainment</h1>
+    <p class="tagline">Live Music. Booked Right.</p>
+
+    <div class="qr-card">
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fct-cse.github.io%2Flinks%2F"
+        alt="QR code linking to this page"
+        width="250" height="250" />
+    </div>
+    <p class="scan">Scan for links</p>
+
+    <div class="links">
+      <a class="btn primary" href="https://collectivesound.com">Visit Our Website</a>
+      <a class="btn" href="mailto:ct@collectivesoundentertainment.com">Email Us</a>
+      <a class="btn" href="https://www.youtube.com/@CollectiveSoundEntertainment">Watch on YouTube</a>
+    </div>
+
+    <p class="foot">Nashville &middot; Franklin, TN</p>
+  </div>
+</body>
+</html>
